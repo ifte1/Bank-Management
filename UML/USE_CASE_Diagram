@@ -1,0 +1,37 @@
+@startuml
+!theme aws-orange
+title Use Case Diagram
+
+left to right direction
+skinparam packageStyle rect
+skinparam shadowing false
+
+actor User
+actor System
+
+rectangle Bank-Management-system {
+    together {
+    (Create Account) as CA
+    (Deposit) as DP
+    (Withdraw) as WD
+    (Check Balance) as CB  
+    (Modify Account) as MACC
+    (Close Account) as CACC
+    }
+    (Check Pin) as CP
+}
+
+User -- CA
+User -- DP
+User -- WD
+User -- CB
+User -- CACC
+User -- MACC
+CP -- System
+CA -- System
+CACC -- System
+DP .-> CP : includes
+WD .-> CP : includes
+CB .-> CP : includes
+MACC .-> CP : includes
+@enduml
