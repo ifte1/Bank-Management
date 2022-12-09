@@ -29,9 +29,9 @@ User -- CACC
 User -- MACC
 CP -- System
 CA -- System
-CACC -- System
-DP .-> CP : includes
-WD .-> CP : includes
-CB .-> CP : includes
-MACC .-> CP : includes
+DP .-> CP : <<includes>>
+WD .-> CP : <<includes>>
+CB .-> CP : <<includes>>
+MACC .-> CP : <<includes>>
+CACC .-> CP : <<includes>>
 @enduml
