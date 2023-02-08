@@ -8,7 +8,8 @@ I modelled the following three diagrams:
 - The Use Case Diagram shows the user interactions with the Bank. In this system there are two actor 'user and system' and seven use cases.
    - [Use Case Diagram](UML/USE-CASE_Diagram.svg)   -->  [PlantUMl](UML/USE_CASE_Diagram)
 
-
+- The Activity Diagram shows the workflow of the Banking process. It starts with choosing what a user wants to do.
+   - [Activity Diagram](UML/Activity_Diagram.svg)   -->  [PlantUMl](UML/Activity_Diagram)
 
 #### 3. **DDD** If your domain is too small, invent other domains around and document these domains (as if you have 10 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with 5-0 Domains. It would be nice if these domains are derived from an Event-Storming (but not mandatory). ####
 
