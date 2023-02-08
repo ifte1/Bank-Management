@@ -1,0 +1,37 @@
+@startuml
+!theme cerulean
+start
+switch (Choice)
+case (New Account )
+  :Account No;
+  :Accont Holder Name;
+  :Account Type;
+  :Initial Amount;
+  :Account Created;
+
+case ( Deposit ) 
+  :Account No;
+  :Amount;
+  :Deposit complete;
+
+case ( Withdraw )
+  :Account No;
+  :Amount;
+  :Withdraw complete;
+case ( Balance Enquiry )
+  :Account No;
+  :Show Balance;
+case ( Account Holder List )
+  :Show List;
+case ( Close Account )
+  :Account NO;
+  :Account Closed;
+case ( Modify Account)
+  :Accont Holder Name;
+  :Account Type;
+  :Initial Amount;
+  :Modified;
+case ( Exit )
+endswitch
+stop
+@enduml
