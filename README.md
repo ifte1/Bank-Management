@@ -30,6 +30,9 @@ I used SonarCloud to find Metrices.it concluded the follwing results
 
 #### 5. **Clean Code Development:** at least **5** points you can show me + >>10 points on your **personal cheat sheet** ####
 
+My personal cheat sheet is [here](cleancode/Personal_Cheat_Sheet.pdf). From there i applied the following elements:
+
+
 
 
 
