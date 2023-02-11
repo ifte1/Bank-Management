@@ -12,7 +12,10 @@ I modelled the following three diagrams:
    - [Activity Diagram](UML/Activity_diagram.svg)   -->  [PlantUMl](UML/Activity_Diagram)
 
 #### 3. **DDD** If your domain is too small, invent other domains around and document these domains (as if you have 10 Mio € from Edlich-Investment!) Develop a clear strategic design with mappings/relationships with 5-0 Domains. It would be nice if these domains are derived from an Event-Storming (but not mandatory). ####
+To figure out all domain events i started with event stroming. Then i combined related subdomain to a bigger domain and established their relationship. After that, I created the core domain chart and placed every domain in their category.
 
+- [Domain and Subdomain Relationships](DDD/domains_and_sub_domains_core_domain_chart.pdf)
+- [Core Domain Chart](DDD/domains_and_sub_domains_core_domain_chart.pdf)
 
 
 #### 4. **Metrics** at least two. Sonarcube would be great. Other non trivial metrics are also fine. ####
