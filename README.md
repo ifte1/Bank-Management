@@ -32,9 +32,16 @@ I used SonarCloud to find Metrices.it concluded the follwing results
 
 My personal cheat sheet is [here](cleancode/Personal_Cheat_Sheet.pdf). From there i applied the following elements:
 
+- Naming Convension: Throughout the project I tried to give all the variable and function a meaningfull name. You can check code [here](cleancode/namingcon.png).
 
+- Write meaningfull comment: I write comment whenever needed so anyone can understand my code easily.
+[Check here](cleancode/Comment.png).
 
+- 	Separate concepts vertically: I separate each function vertically so that anyone can easily understand each blocks. [Check here](cleancode/separate.png).
 
+- Removed unused code: I removed all the unused code and import after completing the project.
+
+- Exception Handling: I tried to handle any exception that can occur in my project.
 
 #### 6. **Build Management** with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. ####
 
