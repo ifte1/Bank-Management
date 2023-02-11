@@ -19,7 +19,13 @@ To figure out all domain events i started with event stroming. Then i combined r
 
 
 #### 4. **Metrics** at least two. Sonarcube would be great. Other non trivial metrics are also fine. ####
+I used SonarCloud to find Metrices.it concluded the follwing results
 
+- [SonarCloud Overview](metrics/Sonarcloud.png)
+- 0 Bugs 
+- 0 Vulnerabilities
+- 0 Security Hotspots
+- 28 Code Smells
 
 
 #### 5. **Clean Code Development:** at least **5** points you can show me + >>10 points on your **personal cheat sheet** ####
