@@ -2,26 +2,26 @@ import pickle
 import os
 import pathlib
 class Account :
-    accNo = 0
+    accountNo = 0
     name = ''
     deposit=0
     type = ''
-    
+    #Create a account
     def createAccount(self):
-        self.accNo= int(input("Enter the account no : "))
+        self.accountNo= int(input("Enter the account no : "))
         self.name = input("Enter the account holder name : ")
         self.type = input("Ente the type of account [C/S] : ")
         self.deposit = int(input("Enter The Initial amount(>=500 for Saving and >=1000 for current"))
         print("\n\n\nAccount Created")
-    
+    #show account details
     def showAccount(self):
-        print("Account Number : ",self.accNo)
+        print("Account Number : ",self.accountNo)
         print("Account Holder Name : ", self.name)
         print("Type of Account",self.type)
         print("Balance : ",self.deposit)
-    
+    #Modify account
     def modifyAccount(self):
-        print("Account Number : ",self.accNo)
+        print("Account Number : ",self.accountNo)
         self.name = input("Modify Account Holder Name :")
         self.type = input("Modify type of Account :")
         self.deposit = int(input("Modify Balance :"))
@@ -33,10 +33,10 @@ class Account :
         self.deposit -= amount
     
     def report(self):
-        print(self.accNo, " ",self.name ," ",self.type," ", self.deposit)
+        print(self.accountNo, " ",self.name ," ",self.type," ", self.deposit)
     
     def getAccountNo(self):
-        return self.accNo
+        return self.accountNo
     def getAcccountHolderName(self):
         return self.name
     def getAccountType(self):
@@ -67,7 +67,7 @@ def displayAll():
         infile = open('accounts.data','rb')
         mylist = pickle.load(infile)
         for item in mylist :
-            print(item.accNo," ", item.name, " ",item.type, " ",item.deposit )
+            print(item.accountNo," ", item.name, " ",item.type, " ",item.deposit )
         infile.close()
     else :
         print("No records to display")
@@ -81,30 +81,38 @@ def displaySp(num):
         infile.close()
         found = False
         for item in mylist :
-            if item.accNo == num :
+            if item.accountNo == num :
                 print("Your account Balance is = ",item.deposit)
                 found = True
     else :
         print("No records to Search")
     if not found :
         print("No existing record with this number")
-
+        
+#deposit and withdraw
 def depositAndWithdraw(num1,num2): 
     file = pathlib.Path("accounts.data")
     if file.exists ():
         infile = open('accounts.data','rb')
+        #load infile data
         mylist = pickle.load(infile)
+        #close data
         infile.close()
         os.remove('accounts.data')
         for item in mylist :
-            if item.accNo == num1 :
+            #checking Account number
+            if item.accountNo == num1 :
+                #deposit checking
                 if num2 == 1 :
                     amount = int(input("Enter the amount to deposit : "))
+                    #amount added in case of deposit
                     item.deposit += amount
                     print("Your account is updted")
                 elif num2 == 2 :
                     amount = int(input("Enter the amount to withdraw : "))
+                    #check if the amount is available in accout
                     if amount <= item.deposit :
+                        #amount deducted 
                         item.deposit -=amount
                     else :
                         print("You cannot withdraw larger amount")
@@ -125,13 +133,15 @@ def deleteAccount(num):
         infile.close()
         newlist = []
         for item in oldlist :
-            if item.accNo != num :
+            if item.accountNo != num :
                 newlist.append(item)
         os.remove('accounts.data')
         outfile = open('newaccounts.data','wb')
         pickle.dump(newlist, outfile)
         outfile.close()
         os.rename('newaccounts.data', 'accounts.data')
+
+
      
 def modifyAccount(num):
     file = pathlib.Path("accounts.data")
@@ -141,7 +151,7 @@ def modifyAccount(num):
         infile.close()
         os.remove('accounts.data')
         for item in oldlist :
-            if item.accNo == num :
+            if item.accountNo == num :
                 item.name = input("Enter the account holder name : ")
                 item.type = input("Enter the account Type : ")
                 item.deposit = int(input("Enter the Amount : "))
@@ -152,8 +162,8 @@ def modifyAccount(num):
         os.rename('newaccounts.data', 'accounts.data')
    
 
-def writeAccountsFile(account) : 
-    
+
+def writeAccountsFile(account) :  
     file = pathlib.Path("accounts.data")
     if file.exists ():
         infile = open('accounts.data','rb')
