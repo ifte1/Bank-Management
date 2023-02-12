@@ -72,6 +72,10 @@ I used the pycharm as IDE for this project. My favorite shortcuts are the follow
 
 #### 10. **DSL** Create a small DSL Demo example snippet in your code even if it does not contribute to your project ####
 
+Domain Specific Language: I took the example of fruit Basket. Here in the [fruits.dsl](dsl/fruits.dsl) file there is a list of fruits that is added and sold from the basket. Now the question is how many fruits(apple,bananna.....) are left in the basket?
+- I used [this](dsl/dsl_inter.py) program as interpreter which interpret the question from fruits.dsl and use the information given there to answer the question.
+
+- You can check the output [here](dsl/dsl.png)
 
 
 
