@@ -74,3 +74,9 @@ I used the pycharm as IDE for this project. My favorite shortcuts are the follow
 
 
 #### 11. **Functional Programming** (prove that you have covered all functional aspects in your code as ####
+
+-  I come up with an external python program where i covered all the aspect of functional programming.
+
+-  I only use final data structures, anonymous lambda function, mostly side effect free functions,  and also provides function as an argument. I also only use higher-order functions (map).
+
+- Check Functional progamming example [here](Functional_programming.py)
