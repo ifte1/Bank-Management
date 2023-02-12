@@ -44,19 +44,27 @@ My personal cheat sheet is [here](cleancode/Personal_Cheat_Sheet.pdf). From ther
 - Exception Handling: I tried to handle any exception that can occur in my project.
 
 #### 6. **Build Management** with any Build System as Ant, Maven, Gradle, etc. (only Travis is perhaps not enough) Do e.g. generate Docs, call tests, etc. ####
-I used pybuilder as a build management tool. You can check my successfull build [here](Build/build.png).
+- I used pybuilder as a build management tool. You can check my successfull build [here](Build/build.png).
 
 
 #### 7. Integrate some nice **Unit-Tests** in your Code to be integrated into the Build ####
 
 
 
+
 #### 8. **Continuous Delivery:** show me your pipeline in e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. ####
 
-
+- Continuous Delivery: I used circleci as the countinous integration platform. I make a branch for circleci in git and connect that branch with circleci. You can Check [here](Pipeline/pipeline.png).
 
 #### 9. Use a good **IDE** and get fluent with it as e.g. IntelliJ. What are your favorite **Key-Shortcuts**?! ####
 
+I used the pycharm as IDE for this project. My favorite shortcuts are the following:
+
+ - Run (F10)
+ - Add/remove line or block comment (cmd + /)
+ - Find Action (shift + cmd + A)
+ - Jump from a function to another (Alt + up/down)
+ - Import the missing packages (Alt + Enter)
 
 
 
