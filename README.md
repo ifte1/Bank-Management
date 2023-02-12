@@ -49,7 +49,9 @@ My personal cheat sheet is [here](cleancode/Personal_Cheat_Sheet.pdf). From ther
 
 #### 7. Integrate some nice **Unit-Tests** in your Code to be integrated into the Build ####
 
+- I face some difficulties to integrate unit test in build. So i decided to test my functional programming code to show my unit-test ability.
 
+- You can find my unit test result [here](unittest/test.png)
 
 
 #### 8. **Continuous Delivery:** show me your pipeline in e.g. Jenkins, Travis-CI, Circle-CI, GitHub Action, GitLab CI, etc. ####
